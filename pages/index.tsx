@@ -15,6 +15,7 @@ const Home: NextPage = () => {
       </Head>
 
       <Header />
+      <h1>roomGPT.matthiaskleinklein.de</h1>
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 sm:mt-20 mt-20 background-gradient">
         <a
           href="https://vercel.fyi/roomGPT"
