@@ -11,28 +11,19 @@ const Home: NextPage = () => {
   return (
     <div className="flex max-w-6xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
       <Head>
-        <title>RoomGPT</title>
+        <title>RoomGPT by matthiaskleinklein</title>
       </Head>
 
       <Header />
-      <h1>roomGPT.matthiaskleinklein.de</h1>
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 sm:mt-20 mt-20 background-gradient">
-        <a
-          href="https://vercel.fyi/roomGPT"
-          target="_blank"
-          rel="noreferrer"
-          className="border border-gray-700 rounded-lg py-2 px-4 text-gray-400 text-sm mb-5 transition duration-300 ease-in-out hover:text-gray-300"
-        >
-          Clone and deploy your own with{" "}
-          <span className="text-blue-600">Vercel</span>
-        </a>
+        
         <h1 className="mx-auto max-w-4xl font-display text-5xl font-bold tracking-normal text-gray-300 sm:text-7xl">
           Generating dream rooms{" "}
           <span className="relative whitespace-nowrap text-blue-600">
             <SquigglyLines />
-            <span className="relative">using AI</span>
+            <span className="relative">at matthiaskleinklein.de</span>
           </span>{" "}
-          for everyone.
+          with AI.
         </h1>
         <h2 className="mx-auto mt-12 max-w-xl text-lg sm:text-gray-400  text-gray-500 leading-7">
           Take a picture of your room and see how your room looks in different
@@ -71,7 +62,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </main>
-      <Testimonials />
+      
       <Footer />
     </div>
   );
