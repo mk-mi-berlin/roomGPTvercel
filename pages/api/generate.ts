@@ -114,7 +114,7 @@ export default async function handler(
     } else {
       console.log("njsonFinalResponse.status : " + jsonFinalResponse.status );
       console.log("new resolve: " + generatedImage);
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      await new Promise((resolve) => setTimeout(resolve, 8000));
     }
   }
   res.status(200).json(
