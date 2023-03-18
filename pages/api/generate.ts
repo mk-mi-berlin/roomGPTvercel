@@ -112,6 +112,7 @@ export default async function handler(
       console.log("genereatef image status failed: " + JSON.stringify(jsonFinalResponse) );
       break;
     } else {
+      console.log("njsonFinalResponse.status : " + jsonFinalResponse.status );
       console.log("new resolve: " + generatedImage);
       await new Promise((resolve) => setTimeout(resolve, 1000));
     }
