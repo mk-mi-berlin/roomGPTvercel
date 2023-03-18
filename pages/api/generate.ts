@@ -109,8 +109,10 @@ export default async function handler(
     if (jsonFinalResponse.status === "succeeded") {
       generatedImage = jsonFinalResponse.output[1] as string;
     } else if (jsonFinalResponse.status === "failed") {
+      console.log("genereatef image status failed: " + JSON.stringify(jsonFinalResponse) );
       break;
     } else {
+      console.log("new resolve: " + generatedImage);
       await new Promise((resolve) => setTimeout(resolve, 1000));
     }
   }
